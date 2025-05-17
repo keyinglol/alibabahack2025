@@ -44,6 +44,8 @@ Key Features
 Tech Stack
 ----------
 
+![Tech Stack Architecture](assets/architecture.jpg)
+
 -   **Frontend**: Angular.js for a responsive UI.
 -   **Data Visualization & Analysis**: Alibaba Cloud Quick BI and Smart Q for dashboards and LLM-driven insights.
 -   **Database**: ApsaraDB RDS for secure data storage.
