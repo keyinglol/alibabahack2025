@@ -43,7 +43,6 @@ export class GlobeComponent implements AfterViewInit {
         <div class="point-label">
           <div class="details">
             <b>${d.name}</b><br>
-            ${d.details}
           </div>
         </div>
       `)
