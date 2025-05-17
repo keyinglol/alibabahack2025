@@ -1,0 +1,59 @@
+<div class="my-2 flex justify-start">
+  <input
+    [(ngModel)]="searchQuery"
+    (ngModelChange)="onSearchChange(searchQuery)"
+    type="text"
+    class="p-2 border rounded-md"
+    placeholder="Search..."
+  />
+</div>
+
+<div class="rounded-2xl shadow-md overflow-hidden border border-gray-200">
+  <nz-table
+    [nzData]="filteredData"
+    [nzFrontPagination]="true"
+    [nzBordered]="false"
+    [nzSize]="'middle'"
+    [nzScroll]="{ x: '100%' }"
+    [nzShowPagination]="true"
+    [nzPageSize]="pageSize"
+    [nzPageIndex]="pageIndex"
+    (nzPageIndexChange)="pageIndex = $event"
+    (nzPageSizeChange)="pageSize = $event"
+    class="w-full"
+  >
+    <thead class="bg-gray-100 text-gray-700 text-sm">
+    <tr>
+      <th *ngFor="let column of columns"
+          class="text-center"
+          [nzSortFn]="true"
+          [nzSortOrder]="column.key === sortColumn ? sortOrder : null"
+          (nzSortOrderChange)="onSortChange(column.key, $event)">
+        {{ column.title }}
+      </th>
+      <ng-container *ngIf="rowActionTemplate">
+      <th class="text-center">Actions</th> <!-- Action column -->
+      </ng-container>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let row of pagedData" class="hover:bg-gray-50 transition-all duration-200">
+      <td *ngFor="let column of columns">
+        <ng-container *ngIf="customRenderers[column.key]; else defaultRenderer">
+          <ng-container *ngTemplateOutlet="customRenderers[column.key]; context: { $implicit: row[column.key], record: row }"></ng-container>
+        </ng-container>
+        <ng-template #defaultRenderer>
+          {{ row[column.key] }}
+        </ng-template>
+      </td>
+
+      <!-- Action Button Cell -->
+      <td class="text-center" *ngIf="rowActionTemplate">
+        <ng-container>
+          <ng-container *ngTemplateOutlet="rowActionTemplate; context: { $implicit: row }"></ng-container>
+        </ng-container>
+      </td>
+    </tr>
+    </tbody>
+  </nz-table>
+</div>

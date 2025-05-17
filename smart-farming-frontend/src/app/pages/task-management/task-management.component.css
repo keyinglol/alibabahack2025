@@ -1,0 +1,22 @@
+.date-cell {
+  position: relative;
+  height: 100%;
+}
+.events-list {
+  margin-top: 8px;
+}
+.event-item {
+  background-color: #1890ff;
+  color: white;
+  border-radius: 4px;
+  padding: 2px 4px;
+  margin: 2px 0;
+  font-size: 12px;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.date-number {
+  visibility: hidden;
+}

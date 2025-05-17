@@ -1,0 +1,67 @@
+<div class="calendar-container">
+  <nz-calendar
+    [(ngModel)]="date"
+    [(nzMode)]="mode"
+    (nzPanelChange)="panelChange($event)"
+    (nzSelectChange)="selectDate($event)"
+  >
+    <ng-container *nzDateCell="let date">
+      <div class="date-cell">
+        <!-- Custom date display (positioned in the top-right corner) -->
+        <div class="date-number">{{ date.getDate() }}</div>
+
+        <div class="weather-info">
+          <img src="https://static-00.iconduck.com/assets.00/sunny-icon-1024x1024-3y20g03p.png"
+          alt="cloudy weather"
+          width="12"
+          height="12"
+          />
+          25°C <!-- Placeholder temperature -->
+        </div>
+
+        <!-- Events list -->
+        <div class="events-list">
+          <div
+            *ngFor="let event of getEventsForDate(date)"
+            class="event-item"
+            (click)="viewEvent(event); $event.stopPropagation();"
+          >
+            {{ event.title }}
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </nz-calendar>
+</div>
+
+<!-- Modal for adding a new event -->
+<nz-modal
+  [(nzVisible)]="isModalVisible"
+  [nzTitle]="modalTitle"
+  (nzOnCancel)="closeModal()"
+  (nzOnOk)="saveEvent()"
+  [nzOkDisabled]="!eventForm.valid"
+>
+  <ng-container *nzModalContent>
+    <form nz-form [formGroup]="eventForm">
+      <nz-form-item>
+        <nz-form-label [nzSpan]="6" nzRequired>Title</nz-form-label>
+        <nz-form-control [nzSpan]="18" nzErrorTip="Please input a title!">
+          <input nz-input formControlName="title" placeholder="Event title" />
+        </nz-form-control>
+      </nz-form-item>
+      <nz-form-item>
+        <nz-form-label [nzSpan]="6">Description</nz-form-label>
+        <nz-form-control [nzSpan]="18">
+          <textarea nz-input formControlName="description" rows="4" placeholder="Event description"></textarea>
+        </nz-form-control>
+      </nz-form-item>
+      <nz-form-item>
+        <nz-form-label [nzSpan]="6">Date</nz-form-label>
+        <nz-form-control [nzSpan]="18">
+          <input nz-input [value]="selectedDate?.toDateString()" disabled />
+        </nz-form-control>
+      </nz-form-item>
+    </form>
+  </ng-container>
+</nz-modal>

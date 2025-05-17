@@ -1,0 +1,62 @@
+<div class="min-h-screen bg-gray-50 p-6">
+  <!-- Header -->
+  <header class="flex items-center justify-between mb-8">
+    <h1 class="text-4xl font-extrabold text-green-700">Smart Farming</h1>
+  </header>
+
+  <!-- Overview Cards -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+    <div class="bg-white rounded-2xl shadow-lg p-6 flex items-center">
+      <i nz-icon nzType="dashboard" class="text-3xl text-green-500 mr-4"></i>
+      <div>
+        <div class="text-sm text-gray-500">Total Sensors</div>
+        <div class="text-2xl font-semibold">12</div>
+      </div>
+    </div>
+    <div class="bg-white rounded-2xl shadow-lg p-6 flex items-center">
+      <i nz-icon nzType="drop" class="text-3xl text-blue-500 mr-4"></i>
+      <div>
+        <div class="text-sm text-gray-500">Avg. Soil Moisture</div>
+        <div class="text-2xl font-semibold">45%</div>
+      </div>
+    </div>
+    <div class="bg-white rounded-2xl shadow-lg p-6 flex items-center">
+      <i nz-icon nzType="cloud" class="text-3xl text-yellow-500 mr-4"></i>
+      <div>
+        <div class="text-sm text-gray-500">Forecast Today</div>
+        <div class="text-2xl font-semibold">Rainy, 22°C</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Charts Section -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+    <div class="bg-white rounded-2xl shadow-lg p-6">
+      <h2 class="text-xl font-bold mb-4">Temperature Trend</h2>
+      <!-- Chart placeholder -->
+      <canvas id="tempChart" width="400" height="200"></canvas>
+<!--      <div id="tempChart" class="h-48"></div>-->
+    </div>
+    <div class="bg-white rounded-2xl shadow-lg p-6">
+      <h2 class="text-xl font-bold mb-4">Humidity Trend</h2>
+      <!-- Chart placeholder -->
+      <canvas id="humidityChart" width="400" height="200"></canvas>
+<!--      <div id="humidityChart" class="h-48"></div>-->
+    </div>
+  </div>
+
+  <!-- Recent Events / Alerts -->
+  <div class="bg-white rounded-2xl shadow-lg p-6">
+    <h2 class="text-xl font-bold mb-4">Recent Alerts</h2>
+    <ul class="space-y-3">
+      <li class="flex items-start">
+        <i nz-icon nzType="exclamation-circle" class="text-red-500 text-lg mr-3 mt-1"></i>
+        <span>High temperature detected in Zone 3 at 3:45 PM.</span>
+      </li>
+      <li class="flex items-start">
+        <i nz-icon nzType="exclamation-circle" class="text-red-500 text-lg mr-3 mt-1"></i>
+        <span>Low soil moisture detected in Zone 1 at 2:10 PM.</span>
+      </li>
+    </ul>
+  </div>
+</div>

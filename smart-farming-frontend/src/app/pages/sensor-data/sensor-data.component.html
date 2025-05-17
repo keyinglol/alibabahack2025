@@ -1,0 +1,18 @@
+<div>
+  <div>
+    <div class="pb-2">
+      <h2 class="text-2xl font-semibold text-gray-800">Sensor Data</h2>
+      <p class="text-sm text-gray-500">Monitor real-time environmental conditions from your greenhouse.</p>
+    </div>
+  </div>
+
+  <app-table
+    [data]="data"
+    [columns]="columns"
+    [filterConditions]="filterConditions"
+    [searchQuery]="searchQuery"
+    (filterChange)="onFilterChange($event)"
+    (sortChange)="onSortChange($event)"
+    (searchChange)="onSearchChange($event)"
+  ></app-table>
+</div>
