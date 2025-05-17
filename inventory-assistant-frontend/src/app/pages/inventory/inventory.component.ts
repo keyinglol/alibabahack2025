@@ -22,29 +22,29 @@ export class InventoryComponent {
   data = [
     {
       itemCode: 'INV001',
-      itemName: 'Organic Fertilizer',
-      brand: 'AgroGrow',
-      category: 'Fertilizer',
+      itemName: 'Coffee',
+      brand: 'AgroCoffee',
+      category: 'Drinks',
       quantity: 50,
-      measurementUnit: 'kg',
+      measurementUnit: 'packets',
       status: 'Available',
       lastUpdated: '2025-04-25 10:30 AM'
     },
     {
       itemCode: 'INV002',
-      itemName: 'Soil Moisture Sensor',
-      brand: 'FarmTech',
-      category: 'Sensor',
+      itemName: 'Tea',
+      brand: 'FarmTea',
+      category: 'Drinks',
       quantity: 15,
-      measurementUnit: 'pcs',
+      measurementUnit: 'packets',
       status: 'Low Stock',
       lastUpdated: '2025-04-24 02:15 PM'
     },
     {
       itemCode: 'INV003',
-      itemName: 'Tomato Seeds',
-      brand: 'GreenSeed',
-      category: 'Seeds',
+      itemName: 'Bakery',
+      brand: 'GreenSeedBake',
+      category: 'Bake',
       quantity: 200,
       measurementUnit: 'packets',
       status: 'Available',
@@ -52,19 +52,19 @@ export class InventoryComponent {
     },
     {
       itemCode: 'INV004',
-      itemName: 'LED Grow Light',
+      itemName: 'Milk',
       brand: 'GrowPro',
-      category: 'Equipment',
+      category: 'Drinks',
       quantity: 30,
-      measurementUnit: 'pcs',
+      measurementUnit: 'cartons',
       status: 'Available',
       lastUpdated: '2025-04-23 04:45 PM'
     },
     {
       itemCode: 'INV005',
-      itemName: 'Pesticide Spray',
-      brand: 'AgroSafe',
-      category: 'Pesticide',
+      itemName: 'Drinking Chocolate',
+      brand: 'DutchLily',
+      category: 'Drinks',
       quantity: 10,
       measurementUnit: 'L',
       status: 'Out of Stock',
@@ -82,19 +82,6 @@ export class InventoryComponent {
     { title: 'status', key: 'status' },
     { title: 'Last Updated', key: 'lastUpdated' },
   ];
-
-  //for item details pg
-  // { title: 'Added By', key: 'addedBy' }
-  // Item Name	Name of the resource or equipment (e.g., Fertilizer A, Sensor Unit)
-  // Category	Type of item (e.g., Tool, Fertilizer, Seed, Sensor)
-  // Quantity	Available stock or number of units
-  // Unit	Measurement unit (e.g., kg, L, pcs)
-  // Reorder Level	Threshold quantity that triggers a restock alert
-  // Location	Where it's stored (e.g., Warehouse A, Greenhouse 1)
-  // Status	Condition or availability (e.g., Available, Low Stock, Out of Stock)
-  // Expiry Date	For perishable or chemical items
-  // Last Updated	Date/time of last inventory update
-  // Added By	User/admin who added/updated the record
 
   filterConditions = { name: '' };
   searchQuery = '';
