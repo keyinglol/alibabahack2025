@@ -5,7 +5,6 @@ import {NgOptimizedImage} from '@angular/common';
   selector: 'app-dashboard',
   standalone: true,
   imports: [
-    NgOptimizedImage
   ],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css'

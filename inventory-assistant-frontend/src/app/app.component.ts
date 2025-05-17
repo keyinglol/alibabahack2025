@@ -9,11 +9,12 @@ import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
 import {NzBadgeComponent} from 'ng-zorro-antd/badge';
 import {NzListComponent, NzListEmptyComponent, NzListItemComponent, NzListItemMetaComponent} from 'ng-zorro-antd/list';
 import {NzDrawerComponent, NzDrawerContentDirective} from 'ng-zorro-antd/drawer';
+import {ChatBoxComponent} from './pages/chat-box/chat-box.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterLink, RouterOutlet, NzIconModule, NzLayoutModule, NzMenuModule, NzDropDownDirective, NzDropDownModule, NzDropdownMenuComponent, NzBadgeComponent, NzListComponent, NzDrawerComponent, NzListItemComponent, NzListItemMetaComponent, NzListEmptyComponent, NzDrawerContentDirective],
+  imports: [CommonModule, RouterLink, RouterOutlet, NzIconModule, NzLayoutModule, NzMenuModule, NzDropDownDirective, NzDropDownModule, NzDropdownMenuComponent, NzBadgeComponent, NzListComponent, NzDrawerComponent, NzListItemComponent, NzListItemMetaComponent, NzListEmptyComponent, NzDrawerContentDirective, ChatBoxComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
