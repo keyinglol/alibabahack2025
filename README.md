@@ -1,6 +1,15 @@
 Intelligent F&B Inventory Management: A Game-Changer Powered by Alibaba Cloud
 =============================================================================
 
+![](assets/Cover.png)
+
+## Important Links
+
+- [Watch the Project Demo on YouTube](https://youtu.be/RrtiS1BEBHA)
+- [View the Source Code on GitHub](https://github.com/keyinglol/alibabahack2025)
+
+
+
 Running a restaurant is a high-stakes game. One day you're tossing out spoiled ingredients from overstocking, the next you're scrambling because you ran out of chicken mid-rush. Food waste is a global problem, [1/3 of all food produced is lost or wasted –around 1.3 billion tonnes of food –costing the global economy close to $940 billion each year.](http://www.fao.org/food-loss-and-food-waste/en). It hits F&B businesses hard. Enter our intelligent inventory management system, powered by Alibaba Cloud, designed to tackle these headaches with smart predictions, real-time insights, and a unique business model to make it accessible.
 
 Why It's Critical
