@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "smart-farming-frontend": {
+    "inventory-assistant-frontend": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/smart-farming-frontend",
+            "outputPath": "dist/inventory-assistant-frontend",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -30,6 +30,11 @@
                 "glob": "**/*",
                 "input": "./node_modules/@ant-design/icons-angular/src/inline-svg/",
                 "output": "/assets/"
+              },
+              {
+                "glob": "**/*",
+                "input": "node_modules/cesium/Build/Cesium",
+                "output": "assets/cesium"
               }
             ],
             "styles": [
@@ -66,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "smart-farming-frontend:build:production"
+              "buildTarget": "inventory-assistant-frontend:build:production"
             },
             "development": {
-              "buildTarget": "smart-farming-frontend:build:development"
+              "buildTarget": "inventory-assistant-frontend:build:development"
             }
           },
           "defaultConfiguration": "development"

@@ -19,10 +19,13 @@
     "@angular/platform-browser-dynamic": "^18.2.0",
     "@angular/router": "^18.2.0",
     "@ctrl/tinycolor": "^4.1.0",
+    "cesium": "^1.129.0",
     "chart.js": "^4.4.9",
+    "globe.gl": "^2.41.4",
     "moment": "^2.30.1",
     "ng-zorro-antd": "^18.2.1",
     "rxjs": "~7.8.0",
+    "three": "^0.176.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.10"
   },
