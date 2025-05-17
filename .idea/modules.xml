@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/FYP-Smart-Farming-System.iml" filepath="$PROJECT_DIR$/.idea/FYP-Smart-Farming-System.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Inventory-assistant.iml" filepath="$PROJECT_DIR$/.idea/Inventory-assistant.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/smart-farming-backend.main.iml" filepath="$PROJECT_DIR$/.idea/modules/smart-farming-backend.main.iml" />
     </modules>
   </component>

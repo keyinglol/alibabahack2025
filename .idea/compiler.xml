@@ -10,5 +10,8 @@
         <module name="smart-farming-backend.main" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="smart-farming-backend" target="22" />
+    </bytecodeTargetLevel>
   </component>
 </project>
