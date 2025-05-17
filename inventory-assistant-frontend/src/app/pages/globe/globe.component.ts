@@ -20,9 +20,9 @@ export class GlobeComponent implements AfterViewInit {
   showPopup: boolean = false;
 
   locations = [
-    { name: 'Astoria', lat: 40.7644, lng: -73.9235, details: 'Sales: 1000USD', topProduct: 'Americano', visitors: '56', salesTrend: 'Lower demand for tomorrow'},
-    { name: 'Lower Manhattan', lat: 60.7075, lng: 30.0113, details: 'Sales: 1000USD', topProduct: 'Long Black', visitors: '92', wastageReduction: '5.3%' },
-    { name: 'Hell\'s Kitchen', lat: 0.7638, lng: -73.9918, details: 'Sales: 1000USD', topProduct: 'Latte', visitors: '68', wastageReduction: '6.8%' }
+    { name: 'Astoria', lat: 40.7644, lng: -73.9235, topProduct: 'Americano', visitors: '56', salesTrend: 'Lower demand for tomorrow'},
+    { name: 'Lower Manhattan', lat: 60.7075, lng: 30.0113, topProduct: 'Long Black', visitors: '92', wastageReduction: '5.3%' },
+    { name: 'Hell\'s Kitchen', lat: 0.7638, lng: -73.9918, topProduct: 'Latte', visitors: '68', wastageReduction: '6.8%' }
   ];
 
   ngAfterViewInit(): void {
