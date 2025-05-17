@@ -107,7 +107,7 @@ nz-content {
 .inner-content {
   /*overflow-y: auto; !* Enable vertical scrolling *!*/
   /*overflow-x: auto;*/
-  padding: 24px;
+  /*padding: 24px;*/
   background: #fff;
   height: 100%;
 }

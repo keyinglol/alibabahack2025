@@ -1,10 +1,12 @@
+
 <button
   (click)="toggleChatbox()"
-  class="fixed bottom-6 right-6 z-50 bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full shadow-lg transition-all duration-300"
+  class="fixed bottom-6 right-6 z-50 bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full shadow-lg transition-all duration-300 text-3xl"
 >
   <span *ngIf="!isOpen">💬</span>
   <span *ngIf="isOpen">❌</span>
 </button>
+
 
 <!-- Chatbox Panel -->
 <div
@@ -15,7 +17,7 @@
 
   <div class="flex-1 border border-gray-200 rounded-md" style="height: calc(100% - 3.5rem);">
     <iframe
-      src="https://bi-cn-hongkong.data.aliyun.com/token3rd/copilot?copilotId=0d0af81c-37cd-42b9-8264-f42a20f3834f&accessTicket=9f036eae-d55e-46cd-b811-f49f73698be2"
+      src="https://bi-cn-hongkong.data.aliyun.com/token3rd/copilot?copilotId=0d0af81c-37cd-42b9-8264-f42a20f3834f&accessTicket=178af32c-bdac-48bf-b7ce-a0a897303b2c"
       width="100%"
       height="100%"
       frameborder="0"

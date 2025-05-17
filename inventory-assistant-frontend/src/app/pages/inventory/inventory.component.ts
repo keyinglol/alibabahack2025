@@ -28,27 +28,30 @@ export class InventoryComponent {
       quantity: 50,
       measurementUnit: 'packets',
       status: 'Available',
-      lastUpdated: '2025-04-25 10:30 AM'
+      lastUpdated: '2025-04-25 10:30 AM',
+      restocksUnit: '0'
     },
     {
       itemCode: 'INV002',
       itemName: 'Tea',
       brand: 'FarmTea',
       category: 'Drinks',
-      quantity: 15,
+      quantity: 2,
       measurementUnit: 'packets',
       status: 'Low Stock',
-      lastUpdated: '2025-04-24 02:15 PM'
+      lastUpdated: '2025-04-24 02:15 PM',
+      restocksUnit: '12'
     },
     {
       itemCode: 'INV003',
       itemName: 'Bakery',
-      brand: 'GreenSeedBake',
+      brand: 'GreenBake',
       category: 'Bake',
-      quantity: 200,
-      measurementUnit: 'packets',
+      quantity: 20,
+      measurementUnit: 'quantity',
       status: 'Available',
-      lastUpdated: '2025-04-22 11:00 AM'
+      lastUpdated: '2025-04-22 11:00 AM',
+      restocksUnit: '0'
     },
     {
       itemCode: 'INV004',
@@ -58,17 +61,19 @@ export class InventoryComponent {
       quantity: 30,
       measurementUnit: 'cartons',
       status: 'Available',
-      lastUpdated: '2025-04-23 04:45 PM'
+      lastUpdated: '2025-04-23 04:45 PM',
+      restocksUnit: '0'
     },
     {
       itemCode: 'INV005',
       itemName: 'Drinking Chocolate',
       brand: 'DutchLily',
       category: 'Drinks',
-      quantity: 10,
-      measurementUnit: 'L',
+      quantity: 0,
+      measurementUnit: 'carton',
       status: 'Out of Stock',
-      lastUpdated: '2025-04-20 09:00 AM'
+      lastUpdated: '2025-04-20 09:00 AM',
+      restocksUnit: '20'
     }
   ];
 
@@ -79,7 +84,8 @@ export class InventoryComponent {
     { title: 'Category', key: 'category' },
     { title: 'Quantity', key: 'quantity' },
     { title: 'Measurement unit', key: 'measurementUnit' },
-    { title: 'status', key: 'status' },
+    { title: 'Status', key: 'status' },
+    { title: 'Restocks Unit', key: 'restocksUnit' },
     { title: 'Last Updated', key: 'lastUpdated' },
   ];
 

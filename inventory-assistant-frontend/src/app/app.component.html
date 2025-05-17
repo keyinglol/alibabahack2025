@@ -7,7 +7,7 @@
     [(nzCollapsed)]="isCollapsed"
     [nzTrigger]="null">
     <div class="sidebar-logo">
-      <a href="https://ng.ant.design/" target="_blank">
+      <a target="_blank">
         <img src="https://ng.ant.design/assets/img/logo.svg" alt="logo">
         <h1>AliStockAI</h1>
       </a>
@@ -21,31 +21,9 @@
           <li nz-menu-item nzMatchRouter>
             <a routerLink="/dashboard">Dashboard</a>
           </li>
-<!--          <li nz-menu-item nzMatchRouter>-->
-<!--            <a routerLink="/sensor-data">Sensor data</a>-->
-<!--          </li>-->
           <li nz-menu-item nzMatchRouter>
             <a routerLink="/inventory">Inventory</a>
           </li>
-<!--          <li nz-menu-item nzMatchRouter>-->
-<!--            <a routerLink="/task-management">Task Management</a>-->
-<!--          </li>-->
-          <li nz-menu-item nzMatchRouter>
-            <a routerLink="/system-activity">System Activity</a>
-          </li>
-<!--          <li nz-menu-item nzMatchRouter>-->
-<!--            <a routerLink="/globe">Store Location</a>-->
-<!--          </li>-->
-        </ul>
-      </li>
-      <li nz-submenu nzOpen nzTitle="User" nzIcon="form">
-        <ul>
-          <li nz-menu-item nzMatchRouter>
-            <a routerLink="/user-profile">User Profile</a>
-          </li>
-<!--          <li nz-menu-item nzMatchRouter>-->
-<!--            <a routerLink="/user-role">User Management</a>-->
-<!--          </li>-->
         </ul>
       </li>
     </ul>
@@ -69,7 +47,7 @@
           <a (click)="openNotificationDrawer()">
             <span nz-icon nzType="bell" nzTheme="outline" class="cart-icon"></span>
             <!-- Optional: Add a badge to show unread count -->
-            <nz-badge [nzCount]="5" [nzOverflowCount]="99"></nz-badge>
+            <nz-badge [nzCount]="4" [nzOverflowCount]="99"></nz-badge>
           </a>
         </div>
 
@@ -100,32 +78,6 @@
             </nz-list>
           </ng-container>
         </nz-drawer>
-<!--        <div class="cart-container">-->
-<!--          <a nz-dropdown [nzDropdownMenu]="menu" nzTrigger="click" nzPlacement="bottomRight">-->
-<!--            <span nz-icon nzType="bell" nzTheme="outline" class="cart-icon"></span>-->
-<!--            &lt;!&ndash; Optional: Add a badge to show unread count &ndash;&gt;-->
-<!--            <nz-badge [nzCount]="5" [nzOverflowCount]="99"></nz-badge>-->
-<!--          </a>-->
-<!--          <nz-dropdown-menu #menu="nzDropdownMenu">-->
-<!--            <ul nz-menu class="notification-dropdown">-->
-<!--              <li nz-menu-item *ngFor="let notification of notifications">-->
-<!--                <div class="notification-item">-->
-<!--                  <div class="notification-title">{{notification.title}}</div>-->
-<!--                  <div class="notification-content">{{notification.description}}</div>-->
-<!--&lt;!&ndash;                  <div class="notification-time">{{notification.time | date:'short'}}</div>&ndash;&gt;-->
-<!--                </div>-->
-<!--              </li>-->
-<!--              <li nz-menu-item *ngIf="notifications.length === 0">-->
-<!--                <div class="empty-notification">No notifications</div>-->
-<!--              </li>-->
-<!--              <li nz-menu-divider></li>-->
-<!--              <li nz-menu-item>-->
-<!--                <a routerLink="/notification">View all notifications</a>-->
-<!--              </li>-->
-<!--            </ul>-->
-<!--          </nz-dropdown-menu>-->
-<!--        </div>-->
-
       </div>
     </nz-header>
     <nz-content>

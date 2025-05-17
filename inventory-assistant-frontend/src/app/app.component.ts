@@ -22,12 +22,13 @@ export class AppComponent {
   isCollapsed = false;
 
   notifications = [
-    { title: 'Sensor Alert', description: 'Soil moisture is too low in Zone 1' },
-    { title: 'Task Due', description: 'Irrigation task pending for today' },
+    { title: 'Out of stock alert: Drinking Chocolate inventory has reached zero.' },
+    { title: 'Sales milestone reached: Latte sales has hit a new high.' },
+    { title: 'Restock reminder: Please replenish 12 packets of tea.' },
+    { title: 'Restock reminder: Please replenish 20 carton of drinking chocolate.' }
   ];
 
   isNotificationDrawerVisible = false;
-  //notifications = []; // Your notification data would go here
 
   openNotificationDrawer(): void {
     this.isNotificationDrawerVisible = true;
